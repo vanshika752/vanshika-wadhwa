@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanshika Wadhwa | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanshika Wadhwa | Portfolio</title>
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="styles.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.hero p {
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 10%;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* PROJECTS */
+.project {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    color: #facc15;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+</style>
+
 </head>
 <body>
 
 <!-- HERO -->
-<section class="hero">
+<div class="hero">
     <h1>Hi, I'm Vanshika Wadhwa</h1>
     <h2>Turning Code into Meaningful Digital Experiences</h2>
     <p>
         I’m a first-year engineering student passionate about web development and building intuitive digital solutions.
         Currently transitioning from learning to real-world application, I focus on responsive and user-centric design.
     </p>
-</section>
+</div>
 
 <!-- PROJECTS -->
-<section class="section">
+<div class="section">
     <h2>Projects</h2>
 
     <div class="project">
@@ -39,36 +116,37 @@
         <p><strong>Impact:</strong> Boosted local visibility and engagement.</p>
         <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
     </div>
-</section>
+
+</div>
 
 <!-- SKILLS -->
-<section class="section">
+<div class="section">
     <h2>Skills</h2>
 
     <h3>Core Development</h3>
     <div class="skills">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Responsive Design</span>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
     </div>
 
-    <h3>Tools & DevOps</h3>
+    <h3 style="margin-top:20px;">Tools & DevOps</h3>
     <div class="skills">
-        <span class="skill">Git</span>
-        <span class="skill">GitHub</span>
-        <span class="skill">VS Code</span>
-        <span class="skill">Figma</span>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">VS Code</div>
+        <div class="skill">Figma</div>
     </div>
 
-    <h3>Soft Skills</h3>
+    <h3 style="margin-top:20px;">Soft Skills</h3>
     <div class="skills">
-        <span class="skill">Problem Solving</span>
-        <span class="skill">Creativity</span>
-        <span class="skill">Communication</span>
-        <span class="skill">Teamwork</span>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Creativity</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Teamwork</div>
     </div>
-</section>
+</div>
 
 <footer>
     <p>© 2026 Vanshika Wadhwa | Built with passion</p>
